@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     protected void hitung(char operator){
-        double operand1 = Double.parseDouble(angka1.getText().toString());
-        double operand2 = Double.parseDouble(angka2.getText().toString());
+        double operand1 = ParseDouble(angka1.getText().toString());
+        double operand2 = ParseDouble(angka2.getText().toString());
         double result = 0.0;
         switch (operator){
             case('+') : result = operand1 + operand2; break;
@@ -51,5 +51,15 @@ public class MainActivity extends AppCompatActivity {
             case('/') : result = operand1 / operand2; break;
         }
         hasil.setText(String.valueOf(result));
+    }
+    double ParseDouble(String strNumber) {
+        if (strNumber != null && strNumber.length() > 0) {
+            try {
+                return Double.parseDouble(strNumber);
+            } catch(Exception e) {
+                return -1;
+            }
+        }
+        else return 0;
     }
 }
