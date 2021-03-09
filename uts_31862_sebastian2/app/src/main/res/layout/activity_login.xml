@@ -7,6 +7,19 @@
     tools:context=".login"
     android:orientation="vertical">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LOGIN MUSIC PLAYER"
+        android:layout_gravity="center"
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logom"
+        android:layout_gravity="center"/>
+
     <EditText
         android:id="@+id/username"
         android:layout_width="300dp"
