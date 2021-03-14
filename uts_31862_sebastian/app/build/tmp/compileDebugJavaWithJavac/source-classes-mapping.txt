@@ -1,8 +1,0 @@
-com/example/uts_31862_sebastian/MainActivity.java
- com.example.uts_31862_sebastian.MainActivity
- com.example.uts_31862_sebastian.MainActivity$1
- com.example.uts_31862_sebastian.MainActivity$2
- com.example.uts_31862_sebastian.MainActivity$3
- com.example.uts_31862_sebastian.MainActivity$4
-com/example/uts_31862_sebastian/BuildConfig.java
- com.example.uts_31862_sebastian.BuildConfig
