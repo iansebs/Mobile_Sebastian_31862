@@ -14,40 +14,40 @@ import android.widget.TextView;
 
 public class music extends AppCompatActivity {
 
-    Button playBtn;
-    SeekBar positionBar;
-    SeekBar volumeBar;
-    TextView elapsedTimeLabel;
-    TextView remainingTimeLabel;
+    Button playButton;
+    SeekBar posisiBar;
+    SeekBar volumeLagu;
+    TextView durasi;
+    TextView sisaDurasi;
     MediaPlayer mp;
-    int totalTime;
+    int total;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_music);
 
-        playBtn = (Button) findViewById(R.id.playBtn);
-        elapsedTimeLabel = (TextView) findViewById(R.id.elapsedTimeLabel);
-        remainingTimeLabel = (TextView) findViewById(R.id.remainingTimeLabel);
+        playButton = (Button) findViewById(R.id.playButton);
+        durasi = (TextView) findViewById(R.id.durasi);
+        sisaDurasi = (TextView) findViewById(R.id.sisaDurasi);
 
         //Buat Media Player
         mp = MediaPlayer.create(this, R.raw.lagu);
         mp.setLooping(true);
         mp.seekTo(0);
         mp.setVolume(0.5f, 0.5f);
-        totalTime = mp.getDuration();
+        total = mp.getDuration();
 
         //Position Bar Lagu
-        positionBar = (SeekBar) findViewById(R.id.positionBar);
-        positionBar.setMax(totalTime);
-        positionBar.setOnSeekBarChangeListener(
+        posisiBar = (SeekBar) findViewById(R.id.posisiBar);
+        posisiBar.setMax(total);
+        posisiBar.setOnSeekBarChangeListener(
                 new SeekBar.OnSeekBarChangeListener() {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
                         if (fromUser) {
                             mp.seekTo(progress);
-                            positionBar.setProgress(progress);
+                            posisiBar.setProgress(progress);
                         }
                     }
 
@@ -64,8 +64,8 @@ public class music extends AppCompatActivity {
         );
 
         //Volume Bar Lagu
-        volumeBar = (SeekBar) findViewById(R.id.volumeBar);
-        volumeBar.setOnSeekBarChangeListener(
+        volumeLagu = (SeekBar) findViewById(R.id.volumeLagu);
+        volumeLagu.setOnSeekBarChangeListener(
                 new SeekBar.OnSeekBarChangeListener() {
                     @Override
                     public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
@@ -104,15 +104,15 @@ public class music extends AppCompatActivity {
         @Override
         public void handleMessage(@NonNull Message msg) {
             int CurrentPosition = msg.what;
-            //Update positionBar
-            positionBar.setProgress(CurrentPosition);
+            //Update posisiBar
+            posisiBar.setProgress(CurrentPosition);
 
             //update labels
             String elapsedTime = createTimeLabel(CurrentPosition);
-            elapsedTimeLabel.setText(elapsedTime);
+            durasi.setText(elapsedTime);
 
-            String remainingTime = createTimeLabel(totalTime-CurrentPosition);
-            remainingTimeLabel.setText("- "+ remainingTime);
+            String remainingTime = createTimeLabel(total-CurrentPosition);
+            sisaDurasi.setText("- "+ remainingTime);
         }
     };
 
@@ -128,16 +128,16 @@ public class music extends AppCompatActivity {
         return timeLabel;
     }
 
-    public void playBtnClick(View view){
+    public void playButtonClick(View view){
         if (!mp.isPlaying()) {
             //stop
             mp.start();
-            playBtn.setBackgroundResource(R.drawable.stop);
+            playButton.setBackgroundResource(R.drawable.stop);
         }
         else{
             //play
             mp.pause();
-            playBtn.setBackgroundResource(R.drawable.play);
+            playButton.setBackgroundResource(R.drawable.play);
         }
     }
 }

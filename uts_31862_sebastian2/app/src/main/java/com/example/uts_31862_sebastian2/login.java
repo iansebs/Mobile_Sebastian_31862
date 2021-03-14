@@ -30,7 +30,7 @@ public class login extends AppCompatActivity {
         });
     }
     private void logmasuk(){
-        Intent intent = new Intent(this, music.class);
+        Intent intent = new Intent(login.this, list.class);
         startActivity(intent);
     }
 }

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".profil"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/pastel">
     <ImageView
         android:layout_width="200dp"
         android:layout_height="200dp"
@@ -32,8 +33,13 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Referensi:
-https://www.youtube.com/watch?v=zCYQBIcePaw"
+        android:text="Referensi: "
+        android:layout_gravity="center"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://www.youtube.com/watch?v=zCYQBIcePaw"
         android:layout_gravity="center"
         android:textSize="20dp"/>
     <TextView
@@ -52,6 +58,12 @@ https://www.youtube.com/watch?v=zCYQBIcePaw"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Modul week 4 A dan 4 Fragmen"
+        android:layout_gravity="left"
+        android:textSize="20dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="https://www.youtube.com/watch?v=BO5iCL7U6Lc"
         android:layout_gravity="left"
         android:textSize="20dp"/>
 </LinearLayout>

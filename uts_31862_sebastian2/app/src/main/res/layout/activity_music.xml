@@ -6,7 +6,8 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:orientation="vertical"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="@drawable/teal">
 
 
     <ImageView
@@ -16,7 +17,7 @@
         android:layout_marginTop="60dp"/>
 
     <SeekBar
-        android:id="@+id/positionBar"
+        android:id="@+id/posisiBar"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"/>
@@ -25,24 +26,24 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <TextView
-            android:id="@+id/elapsedTimeLabel"
+            android:id="@+id/durasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="0:12"
             android:layout_marginStart="40dp"/>
         <TextView
-            android:id="@+id/remainingTimeLabel"
+            android:id="@+id/sisaDurasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="3:30"
             android:layout_marginStart="240dp"/>
     </LinearLayout>
     <Button
-        android:id="@+id/playBtn"
+        android:id="@+id/playButton"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginTop="40dp"
-        android:onClick="playBtnClick"/>
+        android:onClick="playButtonClick"/>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -54,7 +55,7 @@
             android:layout_height="18dp"
             android:src="@drawable/sound"/>
         <SeekBar
-            android:id="@+id/volumeBar"
+            android:id="@+id/volumeLagu"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:progress="50"
