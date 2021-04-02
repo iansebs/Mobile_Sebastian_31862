@@ -1,0 +1,4 @@
+Pada proyek ini terdapat tombol tambah yang berfungsi untuk menambah angka pada halaman utama dari 0 menjadi 1 2 3 dan seterusnya
+setiap tombol tambah ditekan, maka angka akan bertambah 1.
+ada tombol reset untuk mereset angka dari berapapun menjadi 0 kembali.
+untuk warna, ada 4 tombol warna yaitu hitam, merah, biru, dan hijau yang berfungsi untuk mengubah background angka tersebut.

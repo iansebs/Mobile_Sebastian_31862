@@ -1,0 +1,6 @@
+Pada proyek ini terdapat radiobutton temporary, internal, dan external untuk menentukan storage mana yang akan diakses
+lalu ada kolom pengeisian nama file dan isi dari file tersebut yang nantinya bisa disave.
+ada tombol open yang berguna untuk membuka file yang berada pada storage baik temporary, external maupun internal.
+ada tombol save untuk save file, tombol delete untuk menghapus sebuah file dari storage.
+ada tombol clear untuk mengosongkan tulisan pada kolom nama file dan isi file (text)
+dan terakhir ada tombol exit untuk keluar dari aplikasi
