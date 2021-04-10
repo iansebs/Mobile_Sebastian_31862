@@ -1,0 +1,7 @@
+link github : https://github.com/iansebs/Mobile_Sebastian_31862
+
+kesimpulan :
+program bisa menambahkan data mahasiswa berupa nim, nama, email dan nomor telpon lalu disimpan
+jika list data mahasiswa di slide ke kiri maka data akan dihapus
+jika list data mahasiswa di slide ke kanan maka data akan dibuka untuk di edit.
+terdapat tombol untuk hapus semua data.
