@@ -1,0 +1,4 @@
+link github : https://github.com/iansebs/Mobile_Sebastian_31862
+week 10 a : ada tombol "mulai task" ketika dipencet akan ada progress berjalan, ketika progress sudah 100 persen maka akan muncul tulisan aktif lagi setelah tidur selama x milidetik tergantung berapa kali tombol dipencet
+week 10 b : sama seperti week 10 a, ada tombol "mulai task" ketika dipencet akan ada progress berjalam, bedanya progress berjalan lebih lama dan tulisan setelah selesainya berbeda
+week 10 c : ada tombol "tampilkan waktu" yang ketika dipencet akan menimbulkan toast yang berisikan waktu ketika tombol dipencet
